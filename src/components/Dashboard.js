@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import "./Dashboard.css";
+import { Link } from 'react-router-dom';
+
 const Dashboard =()=>{
 const [activity, setActivity]=useState("");
 const [activities, setActivities]=useState(["walking", "gym"]);
@@ -25,12 +27,12 @@ const handleKeyDown = (event) => {
 	}
 
 return(
-<div>
+<div className="container">
   <h1>Dashboard</h1>
   <input type="text" value={activity} onChange={(e)=>setActivity(e.target.value)} onKeyDown={handleKeyDown}/>
   <button onClick={addActivity}>ADD ACTIVITY</button>
   {activities.map((activity,index)=>(
-    <div key={index}>
+    <div key={index} className="dashboard-card">
       <p>{activity}</p>
       <p>Calories Burned :<span>300</span></p>
     </div>
