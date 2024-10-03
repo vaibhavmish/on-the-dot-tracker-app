@@ -24,3 +24,67 @@ display: flex;
     font-size: 1.2em;
 
 }
+
+ul > li a, ul> li{
+    color: darkslategray;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+
+/* header.css */
+.header-div {
+  background-color: #2c3e50; /* Dark background for the header */
+  padding: 20px 0; /* Vertical padding for spacing */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav {
+  display: flex;
+  justify-content: center; /* Center-align the nav items */
+  list-style: none; /* Remove default list styling */
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  margin: 0 15px; /* Space between list items */
+}
+
+.nav li a {
+  color: white; /* White text for contrast against dark background */
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 500; /* Bold font for emphasis */
+  transition: color 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+.nav li a:hover {
+  color: #f39c12; /* Color change on hover (orange) */
+}
+
+.nav li {
+  color: white; /* For the Sign in? text */
+  font-size: 1.1em;
+  font-weight: 500;
+  cursor: pointer; /* Make Sign in? clickable */
+  transition: color 0.3s ease-in-out;
+}
+
+.nav li:hover {
+  color: #f39c12; /* Hover color for the Sign in? text */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+  }
+
+  .nav li {
+    margin: 10px 0; /* Add space between items */
+  }
+}

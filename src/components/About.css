@@ -1,0 +1,40 @@
+.features-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: Arial, sans-serif;
+    margin-bottom: 10px;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+    /* text-align: center; */
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.2em;
+    color: #666;
+}
+
+
+ul > li{
+margin-bottom: 10px;
+}
+
+.about-container p {
+   margin-bottom: 30px;
+}
+
+.logo-container {
+  height: auto; /* Keep the height adaptive */
+  overflow: hidden; /* Prevent any overflow */
+}
+
+.logo-container img {
+  width: 100%; /* Ensure the image takes the full width of its container */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove any default space beneath the image */
+}
+
+.about-container{
+    margin-bottom: 20px;
+}
