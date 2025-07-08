@@ -1,40 +1,91 @@
-.features-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    font-family: Arial, sans-serif;
-    margin-bottom: 10px;
-    margin: 0 auto;
-    max-width: 800px;
-    padding: 20px;
-    /* text-align: center; */
-    background-color: #f7f7f7;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-size: 1.2em;
-    color: #666;
-}
-
-
-ul > li{
-margin-bottom: 10px;
-}
-
-.about-container p {
-   margin-bottom: 30px;
+.about-container {
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  color: #333;
+  text-align: center;
 }
 
 .logo-container {
-  height: auto; /* Keep the height adaptive */
-  overflow: hidden; /* Prevent any overflow */
+  max-width: 160px;
+  margin: 0 auto 20px;
 }
 
 .logo-container img {
-  width: 100%; /* Ensure the image takes the full width of its container */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Remove any default space beneath the image */
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-.about-container{
-    margin-bottom: 20px;
+.about-container h1 {
+  font-size: 2.5rem;
+  color: #2c2c2c;
+  margin-bottom: 10px;
+}
+
+.about-container p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.features-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.features-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: #2c4026;
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.feature-card {
+  background-color: #ecf0f3;
+  border-left: 6px solid #2c4026;
+  border-radius: 12px;
+  padding: 20px;
+  width: 260px;
+  box-shadow: 0 4px 8px rgba(44, 64, 38, 0.1);
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(44, 64, 38, 0.2);
+}
+
+.feature-card h3 {
+  font-size: 1.2rem;
+  color: #2c4026;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.4;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .feature-card {
+    width: 100%;
+  }
+
+  .cards-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
 }
