@@ -58,7 +58,7 @@
   width: 260px;
   box-shadow: 0 4px 8px rgba(44, 64, 38, 0.1);
   transition: all 0.3s ease;
-  text-align: left;
+  text-align: center;
 }
 
 .feature-card:hover {

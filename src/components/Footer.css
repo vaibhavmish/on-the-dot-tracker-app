@@ -46,11 +46,13 @@
 
 .footer-contact h3 {
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .footer-contact p {
   font-size: 1em;
   color:whitesmoke;
+  text-align: center;
 }
 
 .footer-bottom {

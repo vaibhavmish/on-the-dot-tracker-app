@@ -21,8 +21,8 @@ const Footer = ()=> {
         </div>
         <div className="footer-contact">
           <h3>Contact Us</h3>
-          <p>Email: support@onthedot.com</p>
-          <p>Phone: +123 456 7890</p>
+          <p>onthedottracker@gmail.com</p>
+          <p>+91 8960874288</p>
         </div>
 
       </div>  
