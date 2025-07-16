@@ -1,11 +1,7 @@
-/* Styling for the container */
-.dashboard-card{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+/* Container styles */
+.container {
   font-family: Arial, sans-serif;
-  margin-bottom: 10px;
-  margin: 0 auto;
+  margin: 30px auto;
   max-width: 500px;
   padding: 20px;
   text-align: center;
@@ -14,68 +10,141 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.app-heading{
-    font-size:2.7em;
-    font-family: monospace;
-    width: 100%;
-}
-
-.container{
-  font-family: Arial, sans-serif;
-  margin: 0 auto;
-  max-width: 500px;
-  padding: 20px;
-  margin-top: 20px;
+/* App heading */
+.app-heading {
+  font-size: 2.7em;
+  font-family: monospace;
+  width: 100%;
   text-align: center;
-  background-color: #f7f7f7;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #333;
 }
 
-/* Header styling */
+/* Main headers */
 h1 {
   font-size: 24px;
   margin-bottom: 20px;
   color: #333;
 }
 
-/* Input field styling */
-input[type="text"] {
-  width: 80%;
-  padding: 10px;
+/* Input container with button */
+.div-activity {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto 10px auto;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* Input field */
+.div-activity input[type="text"] {
+  flex-grow: 1;
+  min-width: 0;
+  padding: 10px 15px;
   font-size: 16px;
-  margin-bottom: 15px;
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
 }
 
-/* Button styling */
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  color: #fff;
-  background-color: #28a745;
-  border: none;
+/* Toggle dropdown button */
+.toggleDropdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: #007bff;
   border-radius: 5px;
   cursor: pointer;
-  margin-bottom: 20px;
+  color: white;
+  transition: background-color 0.3s ease;
+  user-select: none;
+  flex-shrink: 0;
+}
+
+.toggleDropdown:hover {
+  background-color: #0056b3;
+}
+
+/* Rotate arrow when dropdown is open */
+.toggleDropdown.open svg {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+/* Dropdown suggestions list */
+.dropdown {
+  border: 1px solid #ccc;
+  border-top: none;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: white;
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 0;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 1000;
+}
+
+/* Dropdown list items */
+.dropdown li {
+  padding: 10px 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  font-size: 16px;
+  color: #333;
+}
+
+.dropdown li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Add activity button */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #218838;
+  background-color: #0056b3;
 }
 
-/* Activity list styling */
-.container div {
-  background-color: #fff;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+/* Activity card */
+.dashboard-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: Arial, sans-serif;
+  margin: 10px auto;
+  max-width: 500px;
+  padding: 20px;
+  text-align: center;
+  background-color: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
 }
 
-p {
-  margin: 0;
-  font-size: 18px;
+.dashboard-card p {
+  margin: 5px 0;
+  font-size: 15px;
   color: #333;
+}
+
+.dashboard-card span {
+  font-weight: bold;
 }
